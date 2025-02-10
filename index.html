@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Shop </title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo (Image) -->
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/logo.jpg" alt="Bakery Shop Logo" />
+                </a>
+            </div>
+
+            <!-- Navigation & Authentication Container (Desktop and Mobile Sidebar) -->
+            <div class="nav-auth">
+                <!-- Close button for mobile sidebar -->
+                <div class="close-btn" id="close-btn">&times;</div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu/Products</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth">
+                    <a href="#signin" class="btn signin">Sign In</a>
+                    <a href="#signup" class="btn signup">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle (Hamburger Icon) -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Placeholder Main Content (for demonstration) -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="hero-container">
+                <!-- Image Area -->
+                <div class="hero-image">
+                    <img src="images/home.jpg" alt="Delicious Bakery Goods">
+                </div>
+                <!-- Text & Call-to-Action Area -->
+                <div class="hero-content">
+                    <h1>Welcome to Our Bakery</h1>
+                    <p>Experience the taste of freshly baked delights every day.</p>
+                    <a href="#shop" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Our Bakery">
+                </div>
+                <div class="about-content">
+                    <h2>About Our Bakery</h2>
+                    <p>
+                        Welcome to our bakery, where passion meets perfection! We use only the freshest ingredients to craft delicious bread, pastries, and cakes that bring warmth to every home.
+                    </p>
+                    <p>
+                        From our ovens to your table, we are dedicated to providing the best baked goods, made with love and tradition.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu/Product Section -->
+        <section id="menu">
+            <div class="menu-container">
+                <h2>Our Delicious Menu</h2>
+                <div class="menu-items">
+
+                    <div class="menu-item">
+                        <img src="images/sourdough.jpg" alt="Fresh Sourdough Bread">
+                        <h3>Fresh Sourdough Bread</h3>
+                        <p>Crispy crust and soft interior, baked fresh daily.</p>
+                        <span class="price">$4.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/chocolate_cake.jpg" alt="Chocolate Fudge Cake">
+                        <h3>Chocolate Fudge Cake</h3>
+                        <p>Rich and moist chocolate cake topped with fudge frosting.</p>
+                        <span class="price">$6.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/croissant.jpg" alt="Butter Croissant">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, golden, and buttery layers, perfect for breakfast.</p>
+                        <span class="price">$2.49</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/strawberry_cheesecake.jpg" alt="Strawberry Cheesecake">
+                        <h3>Strawberry Cheesecake</h3>
+                        <p>Creamy cheesecake with a fresh strawberry topping.</p>
+                        <span class="price">$5.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/blueberry_muffins.jpg" alt="Blueberry Muffins">
+                        <h3>Blueberry Muffins</h3>
+                        <p>Soft and fluffy muffins loaded with juicy blueberries.</p>
+                        <span class="price">$3.49</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/cinnamon_roll.jpg" alt="Cinnamon Rolls">
+                        <h3>Cinnamon Rolls</h3>
+                        <p>Warm, gooey cinnamon rolls topped with vanilla icing.</p>
+                        <span class="price">$3.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/macarons.jpg" alt="French Macarons">
+                        <h3>French Macarons</h3>
+                        <p>Delicate almond meringue cookies with a creamy filling.</p>
+                        <span class="price">$7.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/baguette.jpg" alt="Classic Baguette">
+                        <h3>Classic Baguette</h3>
+                        <p>Crispy French bread, perfect for sandwiches or dipping.</p>
+                        <span class="price">$3.49</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/pumpkin_donut.jpg" alt="Pumpkin Spice Donuts">
+                        <h3>Pumpkin Spice Donuts</h3>
+                        <p>Soft, spiced donuts coated with cinnamon sugar.</p>
+                        <span class="price">$2.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/red_velvet_cupcake.jpg" alt="Red Velvet Cupcake">
+                        <h3>Red Velvet Cupcake</h3>
+                        <p>Moist red velvet cupcake topped with cream cheese frosting.</p>
+                        <span class="price">$3.99</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/apple_pie.jpg" alt="Homemade Apple Pie">
+                        <h3>Homemade Apple Pie</h3>
+                        <p>Classic apple pie with a flaky crust and spiced apple filling.</p>
+                        <span class="price">$5.49</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/vanilla_donut.jpg" alt="Vanilla Glazed Donuts">
+                        <h3>Vanilla Glazed Donuts</h3>
+                        <p>Soft and airy donuts covered in a sweet vanilla glaze.</p>
+                        <span class="price">$3.29</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- shop.html -->
+        <section id="shop" class="shop-section">
+            <h2>Shop Our Baked Goods</h2>
+            <div class="shop-container">
+                <div class="product-card" data-name="Freshly Baked Bread" data-price="5.99">
+                    <img src="images/product1.jpg" alt="Freshly Baked Bread">
+                    <h3>Freshly Baked Bread</h3>
+                    <p>$5.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Chocolate Cake" data-price="12.99">
+                    <img src="images/product2.jpg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Croissant" data-price="3.50">
+                    <img src="images/product3.jpg" alt="Croissant">
+                    <h3>Buttery Croissant</h3>
+                    <p>$3.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Blueberry Muffin" data-price="4.99">
+                    <img src="images/product4.jpg" alt="Blueberry Muffin">
+                    <h3>Blueberry Muffin</h3>
+                    <p>$4.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Cheese Danish" data-price="6.49">
+                    <img src="images/product5.jpg" alt="Cheese Danish">
+                    <h3>Cheese Danish</h3>
+                    <p>$6.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Macarons" data-price="8.99">
+                    <img src="images/product6.jpg" alt="Macarons">
+                    <h3>Macarons</h3>
+                    <p>$8.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Cinnamon Roll" data-price="7.49">
+                    <img src="images/product7.jpg" alt="Cinnamon Roll">
+                    <h3>Cinnamon Roll</h3>
+                    <p>$7.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Strawberry Tart" data-price="9.99">
+                    <img src="images/product8.jpg" alt="Strawberry Tart">
+                    <h3>Strawberry Tart</h3>
+                    <p>$9.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Eclair" data-price="5.49">
+                    <img src="images/product9.jpg" alt="Eclair">
+                    <h3>Eclair</h3>
+                    <p>$5.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Red Velvet Cupcake" data-price="4.99">
+                    <img src="images/product10.jpg" alt="Red Velvet Cupcake">
+                    <h3>Red Velvet Cupcake</h3>
+                    <p>$4.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Fruit Tart" data-price="6.99">
+                    <img src="images/product11.jpg" alt="Fruit Tart">
+                    <h3>Fruit Tart</h3>
+                    <p>$6.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Pumpkin Pie" data-price="8.49">
+                    <img src="images/product12.jpg" alt="Pumpkin Pie">
+                    <h3>Pumpkin Pie</h3>
+                    <p>$8.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Lemon Tart" data-price="7.49">
+                    <img src="images/product13.jpg" alt="Lemon Tart">
+                    <h3>Lemon Tart</h3>
+                    <p>$7.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Chocolate Chip Cookies" data-price="3.99">
+                    <img src="images/product14.jpg" alt="Chocolate Chip Cookies">
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>$3.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Banana Bread" data-price="5.99">
+                    <img src="images/product15.jpg" alt="Banana Bread">
+                    <h3>Banana Bread</h3>
+                    <p>$5.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Peach Cobbler" data-price="9.49">
+                    <img src="images/product16.jpg" alt="Peach Cobbler">
+                    <h3>Peach Cobbler</h3>
+                    <p>$9.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact.html -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have any questions or special requests? Reach out to us!</p>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p>123 Bakery Street, Sweet City</p>
+                    <h3>Call Us</h3>
+                    <p>+123 456 7890</p>
+                    <h3>Email</h3>
+                    <p>info@bakeryshop.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer.html -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>Welcome to our bakery! We serve freshly baked goods made with love and the finest ingredients.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bakery Delight. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
